@@ -45,12 +45,9 @@ public class Conference {
 						try {
 							String tmp = attributes[i];
 						} catch (ArrayIndexOutOfBoundsException e) {
-							System.out.println("1111111");
 							sb.append("No data in column " + (i + 1) + " on line " + lineNumber + ".\n");
-							System.out.println("2222222");
 						}
 					}
-					System.out.println(sb.toString());
 					throw new BadDataFormatException(sb.toString());
 				}
 				
