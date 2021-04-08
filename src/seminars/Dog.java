@@ -62,7 +62,7 @@ public class Dog implements Speaker {
 		 * speech.
 		 */
 		for(int i = 0; i < text.length; i++) {
-			if(i % 5 == 0) {
+			if((i + 1) % 5 == 0) {
 				mySpeech += " Woof! ";
 			}
 			mySpeech += " " + text[i] + " ";
